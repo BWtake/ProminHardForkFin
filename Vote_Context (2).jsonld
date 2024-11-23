@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "\nマシュー・プロミン氏は、Cardanoエコシステムにおける革新者であり、熱心なコミュニティメンバーでした。金融業界で培った専門知識を活かし、米ドルに裏付けられたステーブルコイン「$USDM」の開発に中心的役割を果たしました。また、市場が困難な状況でも「Monetaプロジェクト」を成功させるなど、挑戦を恐れない姿勢が彼の特徴でした。技術者であるだけでなく、「黄金律」を実践する人間性を持ち、困っている人を助け、家族や仲間を大切にしました。突然の逝去は大きな損失ですが、彼の功績と精神は、Cardanoコミュニティの成長と未来に大きな影響を与え続けます。そのため、次回のハードフォークを彼の名を冠して「Plomin Hard Fork」とする提案は、彼の偉業を称えるにふさわしいと考えます。"
+  },
+  "hashAlgorithm": "blake2b-256"
+}
